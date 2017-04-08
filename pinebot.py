@@ -21,13 +21,4 @@ def send_file(message):
         f.write(help(message))
         f.write('\n')
 
-@bot.callback_query_handler(func=lambda call: True)
-def test_callback(call):
-    with open('/home/deb/Documents/pinebot_messages', 'a+') as f:
-        f.write('Aca empieza la call:\n')
-        f.write(call)
-        f.write('\n')
-    sleep(3)
-    send_file(call)
-
 bot.polling()
