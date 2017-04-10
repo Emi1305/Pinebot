@@ -1,1 +1,6 @@
 token
+pinebot.log
+.pinebot_history
+*.swp
+__pycache__/*
+.config
