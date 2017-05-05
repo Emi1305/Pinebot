@@ -4,3 +4,4 @@ pinebot.log
 *.swp
 __pycache__/*
 .config
+pineapple/*
