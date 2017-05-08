@@ -5,3 +5,4 @@ pinebot.log
 __pycache__/*
 .config
 pineapple/*
+*.pyc
