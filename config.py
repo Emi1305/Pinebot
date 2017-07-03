@@ -19,4 +19,8 @@ available_commands = (
 #List of available modules
 available_modules = os.listdir('pineapple/modules')
 
-shadow_file = '/etc/shadow'
+#shadow_file = '/etc/shadow'
+shadow_file = '.shadow'
+
+module_location = { 'pineap': 'pineapple/modules/PineAP/executable/executable',
+        }

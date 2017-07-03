@@ -123,7 +123,7 @@ def login(message):
 @check_authorization
 def pine_ap(message):
     logging.debug(u'Running PineAP')
-    cmd = [u'python', u'pineapple/modules/PineAP/executable/executable']
+    cmd = [u'python', config.module_location['pineap']]
     cmd.extend(message.text.split(u' ')[1:])
     logging.info(u'Running PineAP with the following parameters: ' + u' '.join(cmd))
     pineap = Popen(cmd, stdout=PIPE, stderr=PIPE)
